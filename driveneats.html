@@ -23,170 +23,164 @@
   <div class="main">
 
     <div class="opcao">
-      <div class="cabecalho-opcao">
-        <a>Primeiro, seu prato</a>
-      </div>
-      <div class="itens">
-        <div id="hamburguer" class="item" onclick="escolherHamburguer()">
-          <img class="imagem-item" src="./imagens/hamburguer.jpg">
-          <div class="descricao-item">
+      <div class="opcao-titulo">Primeiro, seu prato</div>
+      <div class="produtos">
+        <button class="hamburguer" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/hamburguer.jpg">
+          <div class="descricao-produto">
             <a>Hambúrguer</a>
-            <a>Carne, queijo e salada</a>
+            <a>Carne e queijo</a>
             <a>R$24,90</a>
           </div>
-        </div>
-        <div id="sushi" class="item" onclick="escolherSushi()">
-          <img class="imagem-item" src="./imagens/sushi.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="sushi" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/sushi.jpg">
+          <div class="descricao-produto">
             <a>Sushi</a>
             <a>Sashimi e hossomaki</a>
             <a>R$79,99</a>
           </div>
-        </div>
-        <div id="pizza" class="item" onclick="escolherPizza()">
-          <img class="imagem-item" src="./imagens/pizza.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="pizza" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/pizza.jpg">
+          <div class="descricao-produto">
             <a>Pizza</a>
             <a>Pepperoni</a>
             <a>R$59,90</a>
           </div>
-        </div>
-        <div id="espaguete" class="item" onclick="escolherEspaguete()">
-          <img class="imagem-item" src="./imagens/espaguete.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="espaguete" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/espaguete.jpg">
+          <div class="descricao-produto">
             <a>Espaguete</a>
             <a>Molho bolonhesa</a>
             <a>R$42,00</a>
           </div>
-        </div>
-        <div id="salada" class="item" onclick="escolherSalada()">
-          <img class="imagem-item" src="./imagens/salada.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="salada" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/salada.jpg">
+          <div class="descricao-produto">
             <a>Salada</a>
             <a>Alface e frango</a>
             <a>R$22,50</a>
           </div>
-        </div>
-        <div id="taco" class="item" onclick="escolherTaco()">
-          <img class="imagem-item" src="./imagens/taco.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="taco" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/taco.jpg">
+          <div class="descricao-produto">
             <a>Taco</a>
             <a>Chili beans</a>
             <a>R$14,90</a>
           </div>
-        </div>
+        </button>
       </div>
     </div>
 
     <div class="opcao">
-      <div class="cabecalho-opcao">
-        <a>Agora, sua bebida</a>
-      </div>
-      <div class="itens">
-        <div id="coca-cola" class="item" onclick="escolherCocaCola()">
-          <img class="imagem-item" src="./imagens/coca-cola.jpg">
-          <div class="descricao-item">
+      <div class="opcao-titulo">Agora, sua bebida</div>
+      <div class="produtos">
+        <button class="bebida" id="coca-cola" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/coca-cola.jpg">
+          <div class="descricao-produto">
             <a>Coca Cola</a>
             <a>Lata 350ml</a>
             <a>R$3,90</a>
           </div>
-        </div>
-        <div id="agua" class="item" onclick="escolherAgua()">
-          <img class="imagem-item" src="./imagens/agua.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="bebida" id="agua" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/agua.jpg">
+          <div class="descricao-produto">
             <a>Água</a>
             <a>Garrafa 500ml</a>
             <a>R$4,90</a>
           </div>
-        </div>
-        <div id="suco-laranja" class="item" onclick="escolherSucoLaranja()">
-          <img class="imagem-item" src="./imagens/suco-laranja.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="bebida" id="suco-laranja" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/suco-laranja.jpg">
+          <div class="descricao-produto">
             <a>Suco de laranja</a>
             <a>Natural 200ml</a>
             <a>R$5,90</a>
           </div>
-        </div>
-        <div id="cerveja" class="item" onclick="escolherCerveja()">
-          <img class="imagem-item" src="./imagens/cerveja.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="bebida" id="cerveja" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/cerveja.jpg">
+          <div class="descricao-produto">
             <a>Cerveja</a>
             <a>Long neck 330ml</a>
             <a>R$12,90</a>
           </div>
-        </div>
-        <div id="energetico" class="item" onclick="escolherEnergetico()">
-          <img class="imagem-item" src="./imagens/energetico.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="bebida" id="energetico" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/energetico.jpg">
+          <div class="descricao-produto">
             <a>Energético</a>
             <a>Lata 473ml</a>
             <a>R$9,90</a>
           </div>
-        </div>
-        <div id="vinho" class="item" onclick="escolherVinho()">
-          <img class="imagem-item" src="./imagens/vinho.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="bebida" id="vinho" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/vinho.jpg">
+          <div class="descricao-produto">
             <a>Vinho</a>
             <a>Garrafa 750ml</a>
             <a>R$60,00</a>
           </div>
-        </div>
+        </button>
       </div>
     </div>
 
     <div class="opcao">
-      <div class="cabecalho-opcao">
-        <a>Por fim, sua sobremesa</a>
-      </div>
-      <div class="itens">
-        <div id="sorvete" class="item" onclick="escolherSorvete()">
-          <img class="imagem-item" src="./imagens/sorvete.jpg">
-          <div class="descricao-item">
+      <div class="opcao-titulo">Por fim, sua sobremesa</div>
+      <div class="produtos">
+        <button class="sobremesa" id="sorvete" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/sorvete.jpg">
+          <div class="descricao-produto">
             <a>Sorvete</a>
             <a>Chocolate</a>
             <a>R$9,00</a>
           </div>
-        </div>
-        <div id="cheesecake" class="item" onclick="escolherCheesecake()">
-          <img class="imagem-item" src="./imagens/cheesecake.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="sobremesa" id="cheesecake" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/cheesecake.jpg">
+          <div class="descricao-produto">
             <a>Cheesecake</a>
             <a>Frutas vermelhas</a>
             <a>R$10,99</a>
           </div>
-        </div>
-        <div id="brownie" class="item" onclick="escolherBrownie()">
-          <img class="imagem-item" src="./imagens/brownie.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="sobremesa" id="brownie" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/brownie.jpg">
+          <div class="descricao-produto">
             <a>Brownie</a>
             <a>Chocolate amargo</a>
             <a>R$6,90</a>
           </div>
-        </div>
-        <div id="churro" class="item" onclick="escolherChurro()">
-          <img class="imagem-item" src="./imagens/churro.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="sobremesa" id="churro" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/churro.jpg">
+          <div class="descricao-produto">
             <a>Churro</a>
             <a>Doce de leite</a>
             <a>R$4,90</a>
           </div>
-        </div>
-        <div id="tiramisu" class="item" onclick="escolherTiramisu()">
-          <img class="imagem-item" src="./imagens/tiramisu.jpg">
-          <div class="descricao-item">
+        </button>
+        <button class="sobremesa" id="tiramisu" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/tiramisu.jpg">
+          <div class="descricao-produto">
             <a>Tiramisu</a>
             <a>Café e creme</a>
             <a>R$19,99</a>
           </div>
-        </div>
-        <div id="pudim" class="item" onclick="escolherPudim()">
-          <img class="imagem-item" src="./imagens/pudim.jpg">
-          <div class="descricao-item">
-            <a>Pudim</a>
-            <a>Pudim de leite</a>
-            <a>R$11,50</a>
+        </button>
+        <button class="sobremesa" id="pudim" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/pudim.jpg">
+          <div class="descricao-produto">
+            <div class="titulo">Pudim</div>
+            <div class="descricao">Pudim de leite</div>
+            <div class="preco">R$11,50  <ion-icon name="checkmark-circle-outline"></ion-icon></div>
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>

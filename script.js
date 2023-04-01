@@ -1,53 +1,18 @@
-function escolherHamburguer() {
-    document.getElementById("hamburguer").style.borderColor = "green";
-    document.getElementById("sushi").style.borderColor = "white";
-    document.getElementById("pizza").style.borderColor = "white";
-    document.getElementById("espaguete").style.borderColor = "white";
-    document.getElementById("salada").style.borderColor = "white";
-    document.getElementById("taco").style.borderColor = "white";
+let prato = '';
+let bebida = '';
+let sobremesa = '';
+
+function escolherPrato(botao) {
+    prato = botao.innerHTML;
+
+    
+    botao.classList.add('selecionado');
 }
 
-function escolherSushi() {
-    document.getElementById("hamburguer").style.borderColor = "white";
-    document.getElementById("sushi").style.borderColor = "green";
-    document.getElementById("pizza").style.borderColor = "white";
-    document.getElementById("espaguete").style.borderColor = "white";
-    document.getElementById("salada").style.borderColor = "white";
-    document.getElementById("taco").style.borderColor = "white";
+function escolherBebida {
+
 }
 
-function escolherPizza() {
-    document.getElementById("hamburguer").style.borderColor = "white";
-    document.getElementById("sushi").style.borderColor = "white";
-    document.getElementById("pizza").style.borderColor = "green";
-    document.getElementById("espaguete").style.borderColor = "white";
-    document.getElementById("salada").style.borderColor = "white";
-    document.getElementById("taco").style.borderColor = "white";
-}
+function escolherSobremesa {
 
-function escolherEspaguete() {
-    document.getElementById("hamburguer").style.borderColor = "white";
-    document.getElementById("sushi").style.borderColor = "white";
-    document.getElementById("pizza").style.borderColor = "white";
-    document.getElementById("espaguete").style.borderColor = "green";
-    document.getElementById("salada").style.borderColor = "white";
-    document.getElementById("taco").style.borderColor = "white";
-}
-
-function escolherSalada() {
-    document.getElementById("hamburguer").style.borderColor = "white";
-    document.getElementById("sushi").style.borderColor = "white";
-    document.getElementById("pizza").style.borderColor = "white";
-    document.getElementById("espaguete").style.borderColor = "white";
-    document.getElementById("salada").style.borderColor = "green";
-    document.getElementById("taco").style.borderColor = "white";
-}
-
-function escolherTaco() {
-    document.getElementById("hamburguer").style.borderColor = "white";
-    document.getElementById("sushi").style.borderColor = "white";
-    document.getElementById("pizza").style.borderColor = "white";
-    document.getElementById("espaguete").style.borderColor = "white";
-    document.getElementById("salada").style.borderColor = "white";
-    document.getElementById("taco").style.borderColor = "green";
 }

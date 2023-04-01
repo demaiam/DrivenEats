@@ -40,69 +40,67 @@ body {
     color: #FFFFFF;
 }
 
-.cabecalho-opcao {
+.opcao-titulo {
     font-family: 'Righteous';
     font-weight: 400;
     font-size: 26px;
+    line-height: 50px;
+    margin-top: 20px;
 }
 
 .main {
-    margin-top: 141px;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
 .opcao {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
 }
 
-.itens {
+.produtos {
     display: flex;
     justify-content: space-between;
     overflow-x: scroll
 }
 
-.item {
+.produtos button {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 172px;
     height: 216px;
+    cursor: pointer;
     border: 5px solid white;
     border-radius: 9px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
-.imagem-item {
+.imagem-produto {
     width: 144px;
     height: 87px;
     border-radius: 4px;
 }
 
-.descricao-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.descricao-produto {
     width: 144px;
 }
 
-.descricao-item a:nth-child(1) {
+.descricao-produto a:nth-child(1) {
     font-weight: 700;
     font-size: 16px;
     color: #333333;
 }
 
-.descricao-item a:nth-child(2) {
+.descricao-produto a:nth-child(2) {
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
     color: #A6A6A6;
 }
 
-.descricao-item a:nth-child(3) {
+.descricao-produto a:nth-child(3) {
     font-weight: 400;
     font-size: 16px;
     color: #000000;
@@ -129,4 +127,33 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+}
+
+.selecionado {
+    border: 10px solid green;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    line-height: 22px;
+}
+
+.descricao {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #A6A6A6;
+}
+
+.preco {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 22px;
+}
+
+ion-icon {
+    color:green;
 }
