@@ -16,21 +16,23 @@
 
 <body>
   <div class="cabecalho">
-    <a>DrivenEats</a>
-    <a>Sua comida em 6 minutos</a>
+    <div class="titulos">
+      <a>DrivenEats</a>
+      <a>Sua comida em 6 minutos</a>
+    </div>
   </div>
 
   <div class="main">
 
     <div class="opcao">
       <div class="opcao-titulo">Primeiro, seu prato</div>
-      <div class="produtos">
+      <div class="prato">
         <button class="hamburguer" onclick="escolherPrato(this)">
           <img class="imagem-produto" src="./imagens/hamburguer.jpg">
           <div class="descricao-produto">
             <a>Hambúrguer</a>
             <a>Carne e queijo</a>
-            <a>R$24,90</a>
+            <a>R$24,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
         <button class="sushi" onclick="escolherPrato(this)">
@@ -38,7 +40,7 @@
           <div class="descricao-produto">
             <a>Sushi</a>
             <a>Sashimi e hossomaki</a>
-            <a>R$79,99</a>
+            <a>R$79,99<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
         <button class="pizza" onclick="escolherPrato(this)">
@@ -46,15 +48,15 @@
           <div class="descricao-produto">
             <a>Pizza</a>
             <a>Pepperoni</a>
-            <a>R$59,90</a>
+            <a>R$59,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
         <button class="espaguete" onclick="escolherPrato(this)">
           <img class="imagem-produto" src="./imagens/espaguete.jpg">
           <div class="descricao-produto">
             <a>Espaguete</a>
-            <a>Molho bolonhesa</a>
-            <a>R$42,00</a>
+            <a>Molho à bolonhesa</a>
+            <a>R$42,00<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
         <button class="salada" onclick="escolherPrato(this)">
@@ -62,7 +64,7 @@
           <div class="descricao-produto">
             <a>Salada</a>
             <a>Alface e frango</a>
-            <a>R$22,50</a>
+            <a>R$22,50<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
         <button class="taco" onclick="escolherPrato(this)">
@@ -70,7 +72,7 @@
           <div class="descricao-produto">
             <a>Taco</a>
             <a>Chili beans</a>
-            <a>R$14,90</a>
+            <a>R$14,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
       </div>
@@ -78,53 +80,53 @@
 
     <div class="opcao">
       <div class="opcao-titulo">Agora, sua bebida</div>
-      <div class="produtos">
-        <button class="bebida" id="coca-cola" onclick="escolherBebida(this)">
+      <div class="bebida">
+        <button class="coca-cola" onclick="escolherBebida(this)">
           <img class="imagem-produto" src="./imagens/coca-cola.jpg">
           <div class="descricao-produto">
             <a>Coca Cola</a>
             <a>Lata 350ml</a>
-            <a>R$3,90</a>
+            <a>R$3,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="bebida" id="agua" onclick="escolherBebida(this)">
+        <button class="agua" onclick="escolherBebida(this)">
           <img class="imagem-produto" src="./imagens/agua.jpg">
           <div class="descricao-produto">
             <a>Água</a>
             <a>Garrafa 500ml</a>
-            <a>R$4,90</a>
+            <a>R$4,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="bebida" id="suco-laranja" onclick="escolherBebida(this)">
+        <button class="suco-laranja" onclick="escolherBebida(this)">
           <img class="imagem-produto" src="./imagens/suco-laranja.jpg">
           <div class="descricao-produto">
             <a>Suco de laranja</a>
             <a>Natural 200ml</a>
-            <a>R$5,90</a>
+            <a>R$5,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="bebida" id="cerveja" onclick="escolherBebida(this)">
+        <button class="cerveja" onclick="escolherBebida(this)">
           <img class="imagem-produto" src="./imagens/cerveja.jpg">
           <div class="descricao-produto">
             <a>Cerveja</a>
             <a>Long neck 330ml</a>
-            <a>R$12,90</a>
+            <a>R$12,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="bebida" id="energetico" onclick="escolherBebida(this)">
+        <button class="energetico" onclick="escolherBebida(this)">
           <img class="imagem-produto" src="./imagens/energetico.jpg">
           <div class="descricao-produto">
             <a>Energético</a>
             <a>Lata 473ml</a>
-            <a>R$9,90</a>
+            <a>R$9,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="bebida" id="vinho" onclick="escolherBebida(this)">
+        <button class="vinho" onclick="escolherBebida(this)">
           <img class="imagem-produto" src="./imagens/vinho.jpg">
           <div class="descricao-produto">
             <a>Vinho</a>
             <a>Garrafa 750ml</a>
-            <a>R$60,00</a>
+            <a>R$60,00<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
       </div>
@@ -132,66 +134,69 @@
 
     <div class="opcao">
       <div class="opcao-titulo">Por fim, sua sobremesa</div>
-      <div class="produtos">
-        <button class="sobremesa" id="sorvete" onclick="escolherSobremesa(this)">
+      <div class="sobremesa">
+        <button class="sorvete" onclick="escolherSobremesa(this)">
           <img class="imagem-produto" src="./imagens/sorvete.jpg">
           <div class="descricao-produto">
             <a>Sorvete</a>
             <a>Chocolate</a>
-            <a>R$9,00</a>
+            <a>R$9,00<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="sobremesa" id="cheesecake" onclick="escolherSobremesa(this)">
+        <button class="cheesecake" onclick="escolherSobremesa(this)">
           <img class="imagem-produto" src="./imagens/cheesecake.jpg">
           <div class="descricao-produto">
             <a>Cheesecake</a>
             <a>Frutas vermelhas</a>
-            <a>R$10,99</a>
+            <a>R$10,99<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="sobremesa" id="brownie" onclick="escolherSobremesa(this)">
+        <button class="brownie" onclick="escolherSobremesa(this)">
           <img class="imagem-produto" src="./imagens/brownie.jpg">
           <div class="descricao-produto">
             <a>Brownie</a>
             <a>Chocolate amargo</a>
-            <a>R$6,90</a>
+            <a>R$6,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="sobremesa" id="churro" onclick="escolherSobremesa(this)">
+        <button class="churro" onclick="escolherSobremesa(this)">
           <img class="imagem-produto" src="./imagens/churro.jpg">
           <div class="descricao-produto">
             <a>Churro</a>
             <a>Doce de leite</a>
-            <a>R$4,90</a>
+            <a>R$4,90<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="sobremesa" id="tiramisu" onclick="escolherSobremesa(this)">
+        <button class="tiramisu" onclick="escolherSobremesa(this)">
           <img class="imagem-produto" src="./imagens/tiramisu.jpg">
           <div class="descricao-produto">
             <a>Tiramisu</a>
             <a>Café e creme</a>
-            <a>R$19,99</a>
+            <a>R$19,99<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
-        <button class="sobremesa" id="pudim" onclick="escolherSobremesa(this)">
+        <button class="pudim" onclick="escolherSobremesa(this)">
           <img class="imagem-produto" src="./imagens/pudim.jpg">
           <div class="descricao-produto">
-            <div class="titulo">Pudim</div>
-            <div class="descricao">Pudim de leite</div>
-            <div class="preco">R$11,50  <ion-icon name="checkmark-circle-outline"></ion-icon></div>
+            <a>Pudim</a>
+            <a>Pudim de leite</a>
+            <a>R$11,50<ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
           </div>
         </button>
       </div>
     </div>
   </div>
 
-    <div class="rodape centralizar">
-      <div class="botao-rodape centralizar">
-        <a>Selecione os 3 itens para fechar o pedido</a>
-      </div>
+  <div class="rodape centralizar">
+    <div class="botao-rodape centralizar">
+      <a>Selecione os 3 itens para fechar o pedido</a>
     </div>
+    <div class="botao-rodape-pronto centralizar escondido">
+      <a>Fechar pedido</a>
+    </div>
+  </div>
 
-    <ion-icon name="checkmark-circle-outline"></ion-icon>
+    <!--<ion-icon name="checkmark-circle"></ion-icon>-->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
   </div>
