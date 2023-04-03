@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link href="reset.css" rel="stylesheet" />
+  <link href="estilos.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <title>DrivenEats</title>
+</head>
+
+<body>
+  <div class="cabecalho">
+    <div class="titulos">
+      <a>DrivenEats</a>
+      <a>Sua comida em 6 minutos</a>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <div class="opcao">
+      <div class="opcao-titulo">Primeiro, seu prato</div>
+      <div class="prato">
+        <button class="hamburguer" data-test="dish" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/hamburguer.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Hambúrguer</a>
+            <a class="detalhes-produto">Carne e queijo</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">24.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="sushi" data-test="dish" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/sushi.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Sushi</a>
+            <a class="detalhes-produto">Sashimi e hossomaki</a>
+            <div class="preco-produto" data-test="item-price">R$<div class="preco">79.99</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="pizza" data-test="dish" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/pizza.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Pizza</a>
+            <a class="detalhes-produto">Pepperoni</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">59.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="espaguete" data-test="dish" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/espaguete.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Espaguete</a>
+            <a class="detalhes-produto">Molho à bolonhesa</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">42.00</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="salada" data-test="dish" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/salada.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Salada</a>
+            <a class="detalhes-produto">Alface e frango</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">22.50</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="taco" data-test="dish" onclick="escolherPrato(this)">
+          <img class="imagem-produto" src="./imagens/taco.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Taco</a>
+            <a class="detalhes-produto">Chili beans</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">14.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="opcao">
+      <div class="opcao-titulo">Agora, sua bebida</div>
+      <div class="bebida">
+        <button class="coca-cola" data-test="drink" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/coca-cola.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Coca Cola</a>
+            <a class="detalhes-produto">Lata 350ml</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">3.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="agua" data-test="drink" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/agua.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Água</a>
+            <a class="detalhes-produto">Garrafa 500ml</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">4.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="suco-laranja" data-test="drink" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/suco-laranja.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Suco de laranja</a>
+            <a class="detalhes-produto">Natural 200ml</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">5.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="cerveja" data-test="drink" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/cerveja.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Cerveja</a>
+            <a class="detalhes-produto">Long neck 330ml</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">12.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="energetico" data-test="drink" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/energetico.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Energético</a>
+            <a class="detalhes-produto">Lata 473ml</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">9.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="vinho" data-test="drink" onclick="escolherBebida(this)">
+          <img class="imagem-produto" src="./imagens/vinho.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Vinho</a>
+            <a class="detalhes-produto">Garrafa 750ml</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">60.00</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="opcao">
+      <div class="opcao-titulo">Por fim, sua sobremesa</div>
+      <div class="sobremesa">
+        <button class="sorvete" data-test="dessert" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/sorvete.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Sorvete</a>
+            <a class="detalhes-produto">Chocolate</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">9.00</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="cheesecake" data-test="dessert" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/cheesecake.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Cheesecake</a>
+            <a class="detalhes-produto">Frutas vermelhas</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">10.99</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="brownie" data-test="dessert" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/brownie.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Brownie</a>
+            <a class="detalhes-produto">Chocolate amargo</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">6.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="churro" data-test="dessert" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/churro.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Churro</a>
+            <a class="detalhes-produto">Doce de leite</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">4.90</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="tiramisu" data-test="dessert" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/tiramisu.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Tiramisu</a>
+            <a class="detalhes-produto">Café e creme</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">19.99</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+        <button class="pudim" data-test="dessert" onclick="escolherSobremesa(this)">
+          <img class="imagem-produto" src="./imagens/pudim.jpg">
+          <div class="descricao-produto">
+            <a class="nome-produto">Pudim</a>
+            <a class="detalhes-produto">Pudim de leite</a>
+            <a class="preco-produto" data-test="item-price">R$<div class="preco">11.50</div><ion-icon class="icone escondido" name="checkmark-circle"></ion-icon></a>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodape centralizar">
+    <div class="botao-rodape centralizar">
+      <a>Selecione os 3 itens para fechar o pedido</a>
+    </div>
+    <button class="botao-rodape-pronto centralizar escondido" onclick="fecharPedido(this)">
+      <a>Fechar pedido</a>
+    </button>
+  </div>
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="script.js"></script>
+  
+</body>
