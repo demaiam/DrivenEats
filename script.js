@@ -1,10 +1,16 @@
-let prato = '';
-let bebida = '';
-let sobremesa = '';
+let nomePrato = '';
+let nomeBebida = '';
+let nomeSobremesa = '';
+let precoPrato = 0;
+let precoBebida = 0;
+let precoSobremesa = 0;
 
-function zap(prato){
-    let aux = prato.querySelector('.descricao-produto');
-    alert(aux);
+function fecharPedido() {
+    let celular = '5551998696685';
+    let valorTotal = precoPrato + precoBebida + precoSobremesa;
+    let mensagem = "Olá, gostaria de fazer o pedido:\n- Prato: " + nomePrato + "\n- Bebida: " + nomeBebida + "\n- Sobremesa: " + nomeSobremesa + "\nTotal: R$ " + valorTotal.toFixed(2);
+    mensagem = encodeURIComponent(mensagem);
+    window.open("https://wa.me/" + celular + "?text=" + mensagem);
 }
 
 function verificaPedido() {
@@ -12,15 +18,18 @@ function verificaPedido() {
 
     const botaoRodapePronto = document.querySelector('.botao-rodape-pronto');
 
-    if (prato != '' && bebida != '' && sobremesa != '') {
+    if (nomePrato != '' && nomeBebida != '' && nomeSobremesa != '') {
         botaoRodape.classList.add('escondido');
         botaoRodapePronto.classList.remove('escondido');
-        zap();
     }
 }
 
 function escolherPrato(botao) {
-    prato = botao.innerHTML;
+    nomePrato = botao.querySelector('.nome-produto');
+    nomePrato = nomePrato.innerHTML;
+    precoPrato = botao.querySelector('.preco');
+    precoPrato = precoPrato.innerHTML;
+    precoPrato = Number(precoPrato);
     
     const botaoSelecionadoAnteriormente = document.querySelector('.prato .selecionado');
     const verificadoAnterior = document.querySelector('.prato .selecionado .icone');
@@ -39,7 +48,11 @@ function escolherPrato(botao) {
 }
 
 function escolherBebida(botao) {
-    bebida = botao.innerHTML;
+    nomeBebida = botao.querySelector('.nome-produto');
+    nomeBebida = nomeBebida.innerHTML;
+    precoBebida = botao.querySelector('.preco');
+    precoBebida = precoBebida.innerHTML;
+    precoBebida = Number(precoBebida);
     
     const botaoSelecionadoAnteriormente = document.querySelector('.bebida .selecionado');
     const verificadoAnterior = document.querySelector('.bebida .selecionado .icone');
@@ -58,7 +71,11 @@ function escolherBebida(botao) {
 }
 
 function escolherSobremesa(botao) {
-    sobremesa = botao.innerHTML;
+    nomeSobremesa = botao.querySelector('.nome-produto');
+    nomeSobremesa = nomeSobremesa.innerHTML;
+    precoSobremesa = botao.querySelector('.preco');
+    precoSobremesa = precoSobremesa.innerHTML;
+    precoSobremesa = Number(precoSobremesa);
     
     const botaoSelecionadoAnteriormente = document.querySelector('.sobremesa .selecionado');
     const verificadoAnterior = document.querySelector('.sobremesa .selecionado .icone');

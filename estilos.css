@@ -11,7 +11,7 @@ body {
 
 .cabecalho {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 92px;
     top: 0px;
@@ -60,7 +60,8 @@ body {
 .prato, .bebida, .sobremesa {
     display: flex;
     gap: 30px;
-    overflow-x: scroll
+    overflow-x: scroll;
+    z-index: 1;
 }
 
 .prato button, .bebida button, .sobremesa button {
@@ -90,24 +91,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 15px;
     line-height: 30px;
 }
 
-.descricao-produto a:nth-child(1) {
+.nome-produto {
     font-weight: 700;
     font-size: 16px;
     color: #333333;
 }
 
-.descricao-produto a:nth-child(2) {
+.detalhes-produto {
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
     color: #A6A6A6;
 }
 
-.descricao-produto a:nth-child(3) {
+.preco-produto {
+    display: flex;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
@@ -117,6 +119,7 @@ body {
     width: 100%;
     height: 92px;
     position: fixed;
+    z-index: 2;
     left: 0px;
     bottom: 0px;
     background: #FFFFFF;
@@ -135,6 +138,7 @@ body {
     width: 364px;
     height: 61px;
     border-radius: 50px;
+    border: 0px;
     background-color: #32B72F;
 }
 
@@ -152,8 +156,8 @@ body {
 
 .icone {
     position: relative;
-    top: 5px;
-    left: 70px;
+    top: 10px;
+    left: 60px;
     color: #32B72F;
 }
 
