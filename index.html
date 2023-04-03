@@ -188,10 +188,10 @@
   </div>
 
   <div class="rodape centralizar">
-    <div class="botao-rodape centralizar">
+    <button class="botao-rodape centralizar" data-test="order-btn" disabled>
       <a>Selecione os 3 itens para fechar o pedido</a>
-    </div>
-    <button class="botao-rodape-pronto centralizar escondido" onclick="fecharPedido(this)">
+    </button>
+    <button class="botao-rodape-pronto escondido centralizar" data-test="order-btn" onclick="fecharPedido(this)">
       <a>Fechar pedido</a>
     </button>
   </div>
