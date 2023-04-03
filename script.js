@@ -18,8 +18,8 @@ function verificaPedido() {
     const botaoRodapePronto = document.querySelector('.botao-rodape-pronto');
 
     if (nomePrato != '' && nomeBebida != '' && nomeSobremesa != '') {
-        botaoRodape.classList.toggle('escondido');
-        botaoRodapePronto.classList.toggle('escondido');
+        botaoRodape.classList.add('escondido');
+        botaoRodapePronto.classList.remove('escondido');
     }
 }
 
